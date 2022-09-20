@@ -1,6 +1,6 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  {% load static %} {% block content %}
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -573,13 +573,13 @@
               required
             ></textarea>
           </div>
-          {% comment %} <div class="my-3">
+        <div class="my-3">
             <div class="loading">Loading</div>
             <div class="error-message"></div>
             <div class="sent-message">
               Your message has been sent. Thank you!
             </div>
-          </div> {% endcomment %}
+          </div> 
           <div class="text-center">
             <button type="submit">Send Message</button>
           </div>
@@ -612,4 +612,3 @@
     <script src="{% static 'assets/js/main.js' %}"></script>
   </body>
 </html>
-{% endblock %}
